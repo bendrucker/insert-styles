@@ -1,0 +1,35 @@
+{
+  "name": "insert-styles",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Insert CSS styles into an HTML document",
+  "license": "MIT",
+  "repository": "bendrucker/insert-styles",
+  "author": {
+    "name": "Ben Drucker",
+    "email": "bvdrucker@gmail.com",
+    "url": "bendrucker.me"
+  },
+  "scripts": {
+    "test": "tape test.js && browserify test.js | testron"
+  },
+  "keywords": [
+    "css",
+    "styles",
+    "insert",
+    "style",
+    "tag",
+    "head"
+  ],
+  "devDependencies": {
+    "browserify": "~11.2.0",
+    "electron-prebuilt": "~0.33.6",
+    "global": "~4.3.0",
+    "standard": "^4.0.0",
+    "tape": "^4.0.0",
+    "testron": "~1.2.0"
+  },
+  "files": [
+    "index.js"
+  ]
+}
