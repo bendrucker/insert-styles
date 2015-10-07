@@ -1,7 +1,7 @@
 {
   "name": "insert-styles",
   "main": "index.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Insert CSS styles into an HTML document",
   "license": "MIT",
   "repository": "bendrucker/insert-styles",
