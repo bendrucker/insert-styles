@@ -23,11 +23,10 @@
   ],
   "devDependencies": {
     "browserify": "~11.2.0",
-    "electron-prebuilt": "~0.33.6",
     "global": "~4.3.0",
     "standard": "^4.0.0",
     "tape": "^4.0.0",
-    "testron": "~1.2.0"
+    "testron": "github:bendrucker/testron#prebuilt"
   },
   "files": [
     "index.js"
