@@ -2,11 +2,10 @@
 
 var cache = {}
 
-module.exports = !global.document ? noop : function insertStyles (styles) {
-  if (cache[styles]) return
-  cache[styles] = true
+module.exports = !global.document ? noop : function insertStyles (styles, options) {
+  var id = options && options.id || styles
 
-  var element = document.createElement('style')
+  var element = cache[id] = (cache[id] || document.createElement('style'))
   element.setAttribute('type', 'text/css')
 
   if ('textContent' in element) {
@@ -15,8 +14,10 @@ module.exports = !global.document ? noop : function insertStyles (styles) {
     element.styleSheet.cssText = styles
   }
 
-  var head = document.getElementsByTagName('head')[0]
-  head.appendChild(element)
+  if (!element.parentNode) {
+    var head = document.getElementsByTagName('head')[0]
+    head.appendChild(element)
+  }
 }
 
 function noop () {}
