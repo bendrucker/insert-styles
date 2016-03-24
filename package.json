@@ -11,7 +11,7 @@
     "url": "bendrucker.me"
   },
   "scripts": {
-    "test": "tape ./test && browserify ./test | testron"
+    "test": "standard && tape ./test && browserify ./test | testron"
   },
   "keywords": [
     "css",
