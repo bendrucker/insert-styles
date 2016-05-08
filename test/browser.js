@@ -41,6 +41,17 @@ test('browser', function (t) {
     cleanupStyles()
     t.end()
   })
+
+  t.test('picks up existing style tag', function (t) {
+    var style = document.createElement('style')
+    style.setAttribute('id', 'hello')
+    document.head.appendChild(style)
+
+    insertStyles('.hello {content: "world"}', {id: 'hello'})
+
+    t.equal(style.innerText, '.hello {content: "world"}')
+    t.end()
+  })
 })
 
 function cleanupStyles () {
