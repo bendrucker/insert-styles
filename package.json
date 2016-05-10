@@ -29,6 +29,7 @@
     "testron": "github:bendrucker/testron#prebuilt"
   },
   "files": [
-    "index.js"
+    "*.js",
+    "test/*.js"
   ]
 }
