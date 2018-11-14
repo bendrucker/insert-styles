@@ -1,4 +1,4 @@
-# insert-styles [![Build Status](https://travis-ci.org/bendrucker/insert-styles.svg?branch=master)](https://travis-ci.org/bendrucker/insert-styles)
+# insert-styles [![Build Status](https://travis-ci.org/bendrucker/insert-styles.svg?branch=master)](https://travis-ci.org/bendrucker/insert-styles) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/insert-styles.svg)](https://greenkeeper.io/)
 
 > Insert CSS styles into an HTML document
 

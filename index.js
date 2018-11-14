@@ -7,7 +7,7 @@ function noop () {}
 module.exports = !global.document ? noop : insertStyles
 
 function insertStyles (styles, options) {
-  var id = options && options.id || styles
+  var id = (options && options.id) || styles
 
   var element = cache[id] = (cache[id] || createStyle(id))
 
