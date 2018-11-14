@@ -16,12 +16,12 @@ test('browser', function (t) {
   })
 
   t.test('same id mutates same style tag', function (t) {
-    insertStyles('.foo {color: red}', {id: 123})
+    insertStyles('.foo {color: red}', { id: 123 })
 
     var style = document.getElementsByTagName('style')[0]
     t.equal(style.innerText, '.foo {color: red}')
 
-    insertStyles('.foo {color: blue}', {id: 123})
+    insertStyles('.foo {color: blue}', { id: 123 })
 
     t.equal(style.innerText, '.foo {color: blue}')
 
@@ -30,8 +30,8 @@ test('browser', function (t) {
   })
 
   t.test('different id mutates different style tag', function (t) {
-    insertStyles('.foo {}', {id: 1})
-    insertStyles('.bar {}', {id: 2})
+    insertStyles('.foo {}', { id: 1 })
+    insertStyles('.bar {}', { id: 2 })
 
     const styles = document.getElementsByTagName('style')
 
@@ -47,7 +47,7 @@ test('browser', function (t) {
     style.setAttribute('id', 'hello')
     document.head.appendChild(style)
 
-    insertStyles('.hello {content: "world"}', {id: 'hello'})
+    insertStyles('.hello {content: "world"}', { id: 'hello' })
 
     t.equal(style.innerText, '.hello {content: "world"}')
     t.end()
