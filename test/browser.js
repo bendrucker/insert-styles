@@ -52,6 +52,8 @@ test('browser', function (t) {
     t.equal(style.innerText, '.hello {content: "world"}')
     t.end()
   })
+
+  t.end()
 })
 
 function cleanupStyles () {

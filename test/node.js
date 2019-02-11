@@ -9,4 +9,6 @@ test('node', function (t) {
     t.pass('no document, noop')
     t.end()
   })
+
+  t.end()
 })
